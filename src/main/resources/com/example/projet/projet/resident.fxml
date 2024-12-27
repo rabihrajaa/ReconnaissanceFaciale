@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.projet.controllers.ResidentController">
+    <Button text="Add Resident" onAction="#handleAddResident"/>
+    <Button text="Search Resident" onAction="#handleSearchByName"/>
+</VBox>
