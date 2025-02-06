@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="1381.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.controllers.AdminEditController">
+    <center>
+     <AnchorPane>
+        <children>
+                <HBox layoutX="995.0" layoutY="186.0" opacity="0.65" prefHeight="36.0" prefWidth="297.0" />
+                <AnchorPane layoutX="104.0" layoutY="137.0" prefHeight="506.0" prefWidth="1121.0" styleClass="filtrage">
+                    <ImageView fx:id="adminPhoto" fitHeight="150.0" fitWidth="150.0" layoutX="50.0" layoutY="50.0">
+                        <clip>
+                            <Circle centerX="75.0" centerY="75.0" radius="75.0" />
+                        </clip>
+                    </ImageView>
+                    <Button layoutX="210.0" layoutY="50.0" text="" onAction="#choosePhoto" style="-fx-background-color: transparent;">
+                        <graphic>
+                            <ImageView fitHeight="40.0" fitWidth="40.0">
+                                <image>
+                                    <Image url="@../../../../images/add_resi_icon.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <children>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="47.0" layoutY="145.0">
+
+                        </ImageView>
+                        <VBox layoutX="462.0" layoutY="71.0" prefHeight="100.0" prefWidth="371.0" />
+                        <AnchorPane layoutX="352.0" layoutY="28.0" prefHeight="385.0" prefWidth="695.0">
+                            <children>
+                                <VBox layoutX="119.0" layoutY="5.0" prefHeight="393.0" prefWidth="186.0" AnchorPane.topAnchor="5.0">
+                                    <children>
+                                        <Label text="First name" textFill="#bfbbbb">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label text="Last name" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                              <Label text="Email" textFill="#bfbbbb">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                                        <Label text="CNE" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Phone number" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Birth date" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="297.0" layoutY="-2.0" prefHeight="393.0" prefWidth="279.0">
+                                    <children>
+                                        <TextField fx:id="Name" prefHeight="39.0" prefWidth="279.0" promptText="First name.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="Lastname" prefHeight="39.0" prefWidth="246.0" promptText="Last name.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                              <TextField fx:id="Email" prefHeight="39.0" prefWidth="279.0" promptText="Email.." style="-fx-background-color: #2E2924;">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </TextField>
+                                        <TextField fx:id="CIN" prefHeight="39.0" prefWidth="246.0" promptText="CNE.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="33.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="Phone" prefHeight="39.0" prefWidth="246.0" promptText="Phone number.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="35.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <DatePicker fx:id="Birthdate" prefHeight="39.0" prefWidth="279.0" promptText="Birth date">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                            <effect>
+                                                <ColorAdjust brightness="-0.78" contrast="-0.33" hue="-0.23" saturation="-0.22" />
+                                            </effect>
+                                        </DatePicker>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <Separator layoutX="323.0" layoutY="60.0" opacity="0.16" orientation="VERTICAL" prefHeight="386.0" prefWidth="0.0" />
+                        <Button  onAction="#saveChanges" alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="446.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="330.0" style="-fx-background-color: #f8902e;" text="Save" textAlignment="CENTER" textFill="WHITE">
+                            <opaqueInsets>
+                                <Insets bottom="2.0" left="1.0" right="4.0" top="3.0" />
+                            </opaqueInsets>
+                            <cursor>
+                                <Cursor fx:constant="W_RESIZE" />
+                            </cursor>
+                            <effect>
+                                <GaussianBlur radius="0.0" />
+                            </effect>
+                            <font>
+                                <Font name="Calibri Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

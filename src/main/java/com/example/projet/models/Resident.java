@@ -1,23 +1,31 @@
 package com.example.projet.models;
 
+import javafx.beans.property.*;
+
 import java.time.LocalDate;
 
 public class Resident extends User {
-    public enum Status { Authorized, NotAuthorized }
 
-    private Status status;
-    // Constructor
+    private final ObjectProperty<Status> status;
+
     public Resident(String CIN, String name, String lastname, String phone, LocalDate dateBirth, String photo, Status status) {
-        super(CIN, name, lastname, phone, dateBirth, photo);
-        this.status = status;
+        super(CIN, name, lastname, phone, dateBirth, photo);  // Call to the parent constructor (User)
+        this.status = new SimpleObjectProperty<>(status);
     }
 
-    public Status getStatus() { return status; }
-    public void setStatus(Status status) { this.status = status; }
+    public ObjectProperty<Status> statusProperty() {
+        return status;
+    }
 
-    // Operations
-    public boolean addResident(Resident resident) { return true; }
-    public Resident searchByName(String name) { return null; }
-    public boolean updateResident(Resident resident) { return true; }
-    public boolean deleteResident(Resident resident) { return true; }
+    public Status getStatus() {
+        return status.get();
+    }
+
+    public void setStatus(Status status) {
+        this.status.set(status);
+    }
+
+    public enum Status {
+        Authorized, NotAuthorized
+    }
 }

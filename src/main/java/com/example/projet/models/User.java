@@ -28,6 +28,16 @@ public class User {
         this.photo = new SimpleStringProperty(photo);
         this.dateEntries = new ArrayList<>();
     }
+    public User() {
+        this.CIN = new SimpleStringProperty("");
+        this.name = new SimpleStringProperty("");
+        this.lastname = new SimpleStringProperty("");
+        this.phone = new SimpleStringProperty("");
+        this.dateBirth = new SimpleObjectProperty<>(null);  // LocalDate can be null
+        this.photo = new SimpleStringProperty("");
+        this.dateEntries = new ArrayList<>();
+    }
+
 
     public String getCIN() {
         return CIN.get();

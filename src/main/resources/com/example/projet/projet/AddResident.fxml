@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="1381.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.controllers.AddResidentController">
+    <left>
+        <AnchorPane prefHeight="660.0" prefWidth="55.0" styleClass="sidebar" stylesheets="@style.css">
+            <children>
+                <ImageView layoutX="13.0" layoutY="14.0" AnchorPane.leftAnchor="14.5" AnchorPane.rightAnchor="14.5" AnchorPane.topAnchor="15.0">
+                    <image>
+                        <Image url="@../../../../images/ui.png" />
+                    </image>
+                </ImageView>
+                <VBox layoutX="-3.0" layoutY="169.0" prefHeight="345.0" prefWidth="58.0">
+                    <children>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" styleClass="sidebar-opt">
+                            <image>
+                                <Image url="@../../../../images/home.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="14.5" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ImageView styleClass="sidebar-opt">
+                            <image>
+                                <Image url="@../../../../images/multiple-users-silhouette.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="14.5" top="40.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="29.0" styleClass="sidebar-opt">
+                            <image>
+                                <Image url="@../../../../images/history.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="14.5" top="40.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="38.0">
+                            <VBox.margin>
+                                <Insets left="10.0" top="40.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="4.0" right="4.0" />
+                            </padding>
+                        </Separator>
+                        <ImageView fitHeight="24.0" fitWidth="25.0">
+                            <image>
+                                <Image url="@../../../../images/plus.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="14.5" top="40.0" />
+                            </VBox.margin>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <Circle fill="#ffffff" layoutX="28.0" layoutY="627.0" radius="17.0" stroke="#f8902e" strokeType="INSIDE" AnchorPane.leftAnchor="10.0" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="709.0" prefWidth="1319.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="25.0" prefHeight="101.0" prefWidth="1278.0" styleClass="pane">
+                    <children>
+                        <HBox layoutX="14.0" layoutY="25.0">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="49.0">
+                                    <image>
+                                        <Image url="@../../../../images/logo.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label prefHeight="24.0" prefWidth="139.0" styleClass="titre" text="Add Resident" textFill="#f8902e">
+                                    <font>
+                                        <Font name="Simplified Arabic Fixed" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.24" orientation="VERTICAL" prefHeight="45.0" prefWidth="6.0">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Separator>
+                                <Label alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="1013.0" text="20:30 December 2024" textAlignment="RIGHT" textFill="#615446">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children></AnchorPane>
+                <HBox layoutX="995.0" layoutY="186.0" opacity="0.65" prefHeight="36.0" prefWidth="297.0" />
+                <AnchorPane layoutX="104.0" layoutY="137.0" prefHeight="506.0" prefWidth="1121.0" styleClass="add">
+                    <children>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="47.0" layoutY="145.0">
+
+                        </ImageView>
+                        <VBox layoutX="462.0" layoutY="71.0" prefHeight="100.0" prefWidth="371.0" />
+                        <AnchorPane layoutX="352.0" layoutY="28.0" prefHeight="385.0" prefWidth="695.0">
+                            <children>
+                                <VBox layoutX="119.0" layoutY="5.0" prefHeight="393.0" prefWidth="186.0" AnchorPane.topAnchor="5.0">
+                                    <ImageView fx:id="residentPhoto" fitHeight="150.0" fitWidth="150.0" layoutX="50.0" layoutY="50.0">
+                                        <clip>
+                                            <Circle centerX="75.0" centerY="75.0" radius="75.0" />
+                                        </clip>
+                                    </ImageView>
+
+                                    <Button layoutX="210.0" layoutY="50.0" text="" onAction="#choosePhoto" style="-fx-background-color: transparent;">
+                                        <graphic>
+                                            <ImageView fitHeight="40.0" fitWidth="40.0">
+                                                <image>
+                                                    <Image url="@../../../../images/add_resi_icon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <children>
+
+                                        <Label text="First name" textFill="#bfbbbb">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label text="Last name" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="CNE" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Phone number" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Birth date" textFill="#bfbbbb">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Status">
+                                            <VBox.margin>
+                                                <Insets left="10.0" top="40.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="297.0" layoutY="-2.0" prefHeight="393.0" prefWidth="279.0">
+                                    <children>
+                                        <TextField fx:id="residentNameField" prefHeight="39.0" prefWidth="279.0" promptText="First name.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="residentLastnameField" prefHeight="39.0" prefWidth="246.0" promptText="Last name.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="residentCINField" prefHeight="39.0" prefWidth="246.0" promptText="CNE.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="residentPhoneField" prefHeight="39.0" prefWidth="246.0" promptText="Phone number.." style="-fx-background-color: #2E2924;">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <DatePicker fx:id="residentBirthdatePicker" prefHeight="39.0" prefWidth="279.0" promptText="Birth date">
+                                            <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                            </VBox.margin>
+                                            <effect>
+                                                <ColorAdjust brightness="-0.78" contrast="-0.33" hue="-0.23" saturation="-0.22" />
+                                            </effect>
+                                        </DatePicker>
+                                        <ComboBox fx:id="residentStatusChoiceBox" prefHeight="35.0" prefWidth="279.0" promptText="Status">
+                                            <effect>
+                                                <ColorAdjust brightness="-0.53" contrast="-0.47" />
+                                            </effect>
+                                        </ComboBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <Separator layoutX="323.0" layoutY="60.0" opacity="0.16" orientation="VERTICAL" prefHeight="386.0" prefWidth="0.0" />
+                        <Button fx:id="signUpButton" alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="446.0" nodeOrientation="LEFT_TO_RIGHT"  prefHeight="46.0" prefWidth="330.0" style="-fx-background-color: #f8902e;" text="Add" textAlignment="CENTER" textFill="WHITE" onAction="#addResident" >
+                            <opaqueInsets>
+                                <Insets bottom="2.0" left="1.0" right="4.0" top="3.0" />
+                            </opaqueInsets>
+                            <cursor>
+                                <Cursor fx:constant="W_RESIZE" />
+                            </cursor>
+                            <effect>
+                                <GaussianBlur radius="0.0" />
+                            </effect>
+                            <font>
+                                <Font name="Calibri Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

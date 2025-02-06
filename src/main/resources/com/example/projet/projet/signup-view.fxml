@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="453.0" maxWidth="392.0" minHeight="453.0" minWidth="392.0" prefHeight="453.0" prefWidth="392.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.controllers.SigneupController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcb8b5" height="39.0" layoutX="66.0" layoutY="242.0" stroke="#bcb8b5" strokeType="INSIDE" width="32.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcb8b5" height="39.0" layoutX="66.0" layoutY="188.0" stroke="#bcb8b5" strokeLineCap="ROUND" strokeType="INSIDE" width="32.0" />
+    <!-- LOGIN Label -->
+    <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutX="104.0" layoutY="26.0" prefHeight="84.0" prefWidth="184.0" text="WELCOME" textAlignment="CENTER" textFill="#f8902e" textOverrun="LEADING_ELLIPSIS" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="26.0">
+        <font>
+            <Font name="Simplified Arabic Fixed" size="29.0" />
+        </font>
+    </Label>
+
+    <!-- Username Label -->
+
+    <!-- Username TextField -->
+
+    <!-- Email Label -->
+
+    <!-- Email TextField -->
+    <TextField fx:id="emailField" layoutX="96.0" layoutY="188.0" prefHeight="39.0" prefWidth="246.0" promptText="email.." style="-fx-background-color: #2E2924;" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="188.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+
+    <!-- Password Label -->
+    <!-- Password Field -->
+    <PasswordField fx:id="passwordField" layoutX="96.0" layoutY="242.0" prefHeight="39.0" prefWidth="246.0" promptText="password.." style="-fx-background-color: #2E2924;" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="242.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></PasswordField>
+
+    <!-- Sign Up Button -->
+    <Button fx:id="signUpButton" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="338.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleSignUpAction" prefHeight="46.0" prefWidth="271.0" style="-fx-background-color: #f8902e;" text="Sign Up" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="338.0">
+        <opaqueInsets>
+            <Insets bottom="2.0" left="1.0" right="4.0" top="3.0" />
+        </opaqueInsets>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <GaussianBlur radius="0.0" />
+        </effect>
+        <font>
+            <Font name="Calibri Bold" size="13.0" />
+        </font>
+    </Button>
+   <Label layoutX="232.0" layoutY="295.0" text="Forgot password?" textFill="#bcb8b5">
+      <font>
+         <Font name="System Bold Italic" size="11.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND" />
+      </cursor>
+   </Label>
+   <Line layoutX="372.0" layoutY="14.0" startX="-100.0" stroke="#bf640e" strokeWidth="2.0" />
+   <Line layoutX="118.0" layoutY="15.0" startX="-100.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="118.0" layoutY="438.0" startX="-100.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="378.0" layoutY="437.0" startX="-100.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="372.0" layoutY="14.0" startY="74.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="378.0" layoutY="362.0" startY="74.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="17.0" layoutY="17.0" startY="74.0" stroke="#f8902e" strokeWidth="2.0" />
+   <Line layoutX="17.0" layoutY="362.0" startY="74.0" stroke="#f8902e" strokeWidth="2.0" />
+   <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="72.0" layoutY="200.0">
+      <image>
+         <Image url="@../../../../images/email.png" />
+      </image>
+   </ImageView>
+   <ImageView layoutX="164.0" layoutY="78.0">
+      <image>
+         <Image url="@../../../../images/logo.png" />
+      </image>
+   </ImageView>
+   <ImageView layoutX="72.0" layoutY="276.0">
+
+   </ImageView>
+   <ImageView layoutX="72.0" layoutY="254.0">
+      <image>
+         <Image url="@../../../../images/lock.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

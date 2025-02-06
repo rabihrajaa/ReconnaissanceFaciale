@@ -5,14 +5,14 @@ import java.time.LocalDateTime;
 public class DateEntry {
     private int id;
     private LocalDateTime dateEntry; // LocalDateTime pour DATETIME
-    private String userCIN; // Foreign key vers User (peut être null)
+    private String ResidentCIN; // Foreign key vers User (peut être null)
     private Integer foreignerId; // Foreign key vers Foreigner (peut être null)
 
     // Constructeur complet
     public DateEntry(int id, LocalDateTime dateEntry, String userCIN, Integer foreignerId) {
         this.id = id;
         this.dateEntry = dateEntry;
-        this.userCIN = userCIN;
+        this.ResidentCIN = userCIN;
         this.foreignerId = foreignerId;
     }
 
@@ -27,7 +27,7 @@ public class DateEntry {
     public DateEntry(int id, LocalDateTime dateEntry, String userCIN) {
         this.id = id;
         this.dateEntry = dateEntry;
-        this.userCIN = userCIN;
+        this.ResidentCIN = userCIN;
     }
 
     // Getters et setters
@@ -47,12 +47,12 @@ public class DateEntry {
         this.dateEntry = dateEntry;
     }
 
-    public String getUserCIN() {
-        return userCIN;
+    public String getResidentCIN() {
+        return ResidentCIN;
     }
 
-    public void setUserCIN(String userCIN) {
-        this.userCIN = userCIN;
+    public void setResidentCIN(String userCIN) {
+        this.ResidentCIN = userCIN;
     }
 
     public Integer getForeignerId() {

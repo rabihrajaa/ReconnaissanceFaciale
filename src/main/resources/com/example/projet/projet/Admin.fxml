@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-27.0" layoutY="-128.0" prefHeight="517.0" prefWidth="1256.0" styleClass="parent">
+         <children>
+            <HBox layoutX="995.0" layoutY="186.0" opacity="0.65" prefHeight="36.0" prefWidth="297.0" />
+            <AnchorPane layoutX="117.0" layoutY="146.0" prefHeight="478.0" prefWidth="1080.0" styleClass="filtrage" stylesheets="@style.css">
+               <children>
+                  <ImageView fx:id="adminPhoto" fitHeight="150.0" fitWidth="150.0" layoutX="50.0" layoutY="50.0">
+                     <clip>
+                        <Circle centerX="75.0" centerY="75.0" radius="75.0" />
+                     </clip>
+                  </ImageView>
+                  <VBox layoutX="462.0" layoutY="71.0" prefHeight="100.0" prefWidth="371.0" />
+                  <AnchorPane layoutX="357.0" layoutY="40.0" prefHeight="385.0" prefWidth="695.0">
+                     <children>
+                        <VBox layoutX="119.0" layoutY="5.0" prefHeight="393.0" prefWidth="186.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <Label text="First name" textFill="#bfbbbb">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Last name" textFill="#bfbbbb">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Email" textFill="#bfbbbb">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="CIN" textFill="#bfbbbb">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Phone number" textFill="#bfbbbb">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Birth date" textFill="#bfbbbb">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="297.0" layoutY="-2.0" prefHeight="393.0" prefWidth="279.0">
+                           <children>
+                              <Label fx:id="adminFisrtNameId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="FIRST NAME" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="adminLastNameId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="LAST NAME" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="adminEmailId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="Eamil@gmail.com" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="adminCNEId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="CNE" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="adminPhoneNumberId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="07XXXXXX" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="adminBirthDateId" alignment="CENTER" prefHeight="35.0" prefWidth="279.0" text="xx/xx/xx" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="323.0" layoutY="60.0" opacity="0.16" orientation="VERTICAL" prefHeight="386.0" prefWidth="0.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="1219.0" layoutY="146.0" mnemonicParsing="false" onAction="#EditAdmin" style="-fx-background-color: #171616;">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../../images/pencil.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

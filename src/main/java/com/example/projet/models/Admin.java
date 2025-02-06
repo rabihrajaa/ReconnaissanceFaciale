@@ -15,6 +15,12 @@ public class Admin extends User {
         this.password = new SimpleStringProperty(password);
     }
 
+    public Admin() {
+        super();
+        this.email = new SimpleStringProperty("");
+        this.password = new SimpleStringProperty("");
+    }
+
     // Observable Getters and Setters
     public StringProperty emailProperty() {
         return email;

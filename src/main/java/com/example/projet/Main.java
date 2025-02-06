@@ -12,12 +12,13 @@ import javafx.stage.Stage;
         @Override
         public void start(Stage primaryStage) throws Exception {
             DatabaseHelper.initializeDatabase();
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/projet/projet/admin_dashboard.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/projet/projet/AdminEdit.fxml"));
             primaryStage.setTitle("Admin Dashboard");
             primaryStage.setScene(new Scene(root, 800, 600));
+            // Activer le mode plein écran
+            primaryStage.setFullScreen(true);
             primaryStage.show();
         }
-
         public static void main(String[] args) {
             launch(args);
         }

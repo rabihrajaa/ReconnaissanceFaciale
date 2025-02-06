@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="1381.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.controllers.HistoryController">
+   <top>
+        <AnchorPane prefHeight="709.0" prefWidth="1113.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pagination layoutX="249.0" layoutY="514.0" pageCount="6" prefHeight="136.0" prefWidth="1043.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <ColorAdjust brightness="-0.04" contrast="0.22" hue="0.15" saturation="1.0" />
+               </effect>
+                </Pagination>
+                <HBox layoutX="837.0" layoutY="156.0" opacity="0.65" prefHeight="40.0" prefWidth="162.0" />
+                <AnchorPane layoutX="231.0" layoutY="203.0" prefHeight="403.0" prefWidth="833.0" styleClass="table">
+               <children>
+                      <TableView fx:id="historyTableView" editable="true" layoutX="238.0" layoutY="6.0" prefHeight="376.0" prefWidth="802.0" style="-fx-background-color: #000000; -fx-border-width: 5px;" styleClass="tableView">
+                          <columns>
+                              <TableColumn fx:id="photoColumn" maxWidth="250.0" minWidth="50.0" prefWidth="160.0" style="-fx-border-radius: 3px; -fx-background-color: #f8902e;" text="Photo" />
+                              <TableColumn fx:id="DateColumn" maxWidth="338.66668701171875" prefWidth="160.0" style="-fx-background-color: #f8902e;" styleClass="columnHeader" text="Date" />
+                              <TableColumn fx:id="HeureColumn" maxWidth="394.0000305175781" prefWidth="160.0" style="-fx-background-color: #f8902e; -fx-text-fill: #000000; -fx-alignment: Center;" text="Heure" />
+                              <TableColumn fx:id="StatusColumn" maxWidth="438.66656494140625" minWidth="0.0" prefWidth="160.0" style="-fx-background-color: #f8902e;" text="Status" />
+                              <TableColumn fx:id="NameColumn" maxWidth="452.6666259765625" minWidth="3.0" prefWidth="160.0" style="-fx-background-color: #f8902e;" text="Name (resident)" />
+                          </columns>
+                          <effect>
+                              <ColorAdjust />
+                          </effect>
+                      </TableView>
+                      <AnchorPane layoutX="35.0" layoutY="14.0" prefHeight="215.0" prefWidth="185.0" styleClass="filtrage">
+                          <children>
+                              <Label layoutX="59.0" layoutY="21.0" text="Filter by:">
+                                  <font>
+                                      <Font name="System Bold" size="14.0" />
+                                  </font>
+                              </Label>
+                              <ComboBox layoutX="25.0" layoutY="134.0" opacity="0.6" prefHeight="34.0" prefWidth="127.0" promptText="Statut" style="-fx-background-color: #ff9900; -fx-border-color: #ff9900; -fx-text-fill: white;" visibleRowCount="2">
+                                  <effect>
+                                      <Lighting diffuseConstant="1.32" specularConstant="0.6" specularExponent="17.24" surfaceScale="2.42">
+                                          <bumpInput>
+                                              <Shadow />
+                                          </bumpInput>
+      
+                                      </Lighting>
+                                  </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                        <DatePicker layoutX="27.0" layoutY="63.0" opacity="0.44" prefHeight="35.0" prefWidth="122.0" promptText="Date">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </DatePicker>
+                          </children>
+                      </AnchorPane>
+               </children></AnchorPane>
+                  <Button layoutX="1222.0" layoutY="162.0" minWidth="42.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: #171616;">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../../images/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                  </Button>
+                  <Button layoutX="1169.0" layoutY="162.0" minWidth="46.0" mnemonicParsing="false" onAction="#print" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: #171616;">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../../images/printer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                  </Button>
+
+            </children>
+        </AnchorPane>
+   </top>
+</BorderPane>
